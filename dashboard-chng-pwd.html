@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <nav class="header-navbar navbar navbar-expand-lg sticky-top navbar-light">
+        <div class="container">
+          <div class="">
+              <a class="navbar-brand" href="index.html">
+                <img class="logo" src="img/logo.png"></a>
+          </div>
+          <div class="">
+              <ul class="navbar-nav menu">
+                  <li class="nav-item active">
+                      <a class="nav-link menuItem" href="index.html">Home </a>
+                  </li>
+                  <li class="nav-item active mx-2">
+                      <a class="nav-link menuItem" href="about-us.html">About Us </a>
+                  </li>
+                  <li class="nav-item active mx-2">
+                      <a class="nav-link menuItem" href="blog.html">Blog </a>
+                  </li>
+                  <li class="nav-item active mx-2">
+                      <a class="nav-link menuItem" href="career.html">Career </a>
+                  </li>
+                   <li class="nav-item active mx-2">
+                      <a class="nav-link menuItem" href="contact-us.html">Contact Us </a>
+                  </li>
+  
+                 <li class="nav-item active mx-2">
+                      <a class="nav-link  login-show" href="#">Login </a>
+                  </li>
+  
+                 
+                  <button class="register btn btn-primary blue-btns">Register</button>
+                  <button type="button" class="help-enquiry btn btn-primary enq-btn">Enquiry</button>
+                  <a href="./school-info.html"><button class="help-enquiry btn btn-primary enq-btn">Add School</button></a>
+                  
+                </ul>
+  
+              
+          </div>
+          </div>
+      </nav>
+ 
+    <section class="dashboard-container">
+    <div class="container">
+        <div class="dashboard">
+            <div class="dashboard-contents">
+                <div class="dashboard-list">
+                    <ul>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link dashboard-head" href="dashboard.html">Dashboard </a>
+                        </li>
+                        <li class="nav-item active mx-2">
+                            <a class="nav-link" href="dashboard-update.html">Update Profile</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="dashboard-scl-enquiry.html">School Enquiry</a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" href="dashboard-chng-pwd.html">Change Password</a>
+                        </li>
+                         <li class="nav-item mx-2">
+                            <a class="nav-link" href="#">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="update-profile">
+                    <h2>Change your <span style="color: rgba(255, 167, 1, 1);text-decoration: underline;">password</span></h2>
+                    <form id="dashboardFormUpdate" novalidate="novalidate">
+                       <div class="input_field">
+                          <input type="password" value="" name="old_pwd" placeholder="old password">
+                        </div>
+                        
+                        <div class="input_field">
+                           <input type="password" value="" name="c_new_pwd" placeholder="create new password">
+                        </div>
+                        
+                        <div class="input_field">
+                           <input type="tel" value="" maxlength="10" name="cnf_new_pwd" placeholder="confirm new password">
+                        </div>
+                        
+                            <div class="input_field_btn inp_btn">
+                                <button type="submit" class="btn-primary" id="signUpBtnnUpdate" name="signUpBtnnUpdate">Save Changes</button>
+                            </div>
+                        
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <div class="footer-bg">
+        <div class="container">
+        <div class=" footers">
+                  <div class="m-5">
+                      <img class="farbm" src="img/logo.png" alt="">
+                      <div class="d-flex farbm-10"> <img src="img/phone.png" alt=""> <span class="mx-2">+91-9999 000 000</span> </div>
+                      <img src="img/email.png" alt=""> <span class="mx-2">info@pa@gmail.com</span>
+                  </div>
+                  <div class="m-5">
+                      <ul class="ul-li">
+                      <li class="text-color-green mb-2">Information</li>
+                          <a href="index.html"><li>Home</li></a> 
+                          <li>Services</li>
+                          <li>Order Tracking</li>
+                          <li>News</li>
+                          <li>Contact Us</li>
+                      </ul>
+                  </div>
+                  <div class="m-5">
+                      <ul class="ul-li">
+                          <li class="text-color-green mb-2">Information</li>
+                          <li>Service</li>
+                          <li>Support</li>
+                          <li>Privacy</li>
+                          <li>Terms &amp; Conditions</li>
+                      </ul>
+        
+                  </div>
+              
+                  <div class="m-5   ">
+                      <p class="text-color-green mb-2">Subscribe More Information</p>
+                        <input type="text" id="lname" name="lname" placeholder="Type Your Mail Id">
+                        <div class="suscribe">
+                          <button>SUBSCRIBE</button>
+                        </div>
+                      <div> 
+                          <p>Follow us on:</p> 
+                          <img src="img/fb.png">  
+                          <img src="img/insta.png"> 
+                        <img src="img/yt.png"> 
+                        <img src="img/tw.png">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        
+              <div class="footer-heading  green-btns text-center text-white"><p>All right reserved @ codiantbiztech.com</p></div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+</html>
