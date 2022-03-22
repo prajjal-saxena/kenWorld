@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ken World</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Add the slick-theme.css if you want default styling -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    
+    <nav class="header-navbar navbar navbar-expand-lg sticky-top navbar-light">
+      <div class="container">
+        <div class="">
+            <a class="navbar-brand" href="index.html">
+              <img class="logo" src="img/logo.png"></a>
+        </div>
+        <div class="">
+            <ul class="navbar-nav menu">
+                <li class="nav-item active">
+                    <a class="nav-link menuItem" href="index.html">Home </a>
+                </li>
+                <li class="nav-item active mx-2">
+                    <a class="nav-link menuItem" href="about-us.html">About Us </a>
+                </li>
+                <li class="nav-item active mx-2">
+                    <a class="nav-link menuItem" href="blog.html">Blog </a>
+                </li>
+                <li class="nav-item active mx-2">
+                    <a class="nav-link menuItem" href="career.html">Career </a>
+                </li>
+                 <li class="nav-item active mx-2">
+                    <a class="nav-link menuItem" href="contact-us.html">Contact Us </a>
+                </li>
+
+               <li class="nav-item active mx-2">
+                    <a class="nav-link  login-show" href="#">Login </a>
+                </li>
+
+               
+                <button class="register btn btn-primary blue-btns">Register</button>
+                <button type="button" class="help-enquiry btn btn-primary enq-btn">Enquiry</button>
+                <a href="./school-info.html"><button class="help-enquiry btn btn-primary enq-btn">Add School</button></a>
+                
+              </ul>
+
+            
+        </div>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+      <div class="container">
+        <button class="hamburger">
+          <!-- material icons https://material.io/resources/icons/ -->
+          <i class="menuIcon material-icons" >menu</i>
+          <!-- <i class="closeIcon material-icons">close</i> -->
+        </button>
+      </div>
+    </div>
+
+    <div class="enquiry signup-pop" >
+      <div  class="close-btn-enquiry">
+        <span class="cancel-btn">X</span>
+      </div>
+      <form action="" class="form-enq">
+        <div class="input_field">
+          <label class="form-enq-name">Child Name</label>
+          <input required="" type="text" placeholder="Enter Your Name" class="form-control" name="nickname" value="">
+        </div>
+        <div class="input_field">
+          <label class="form-enq-name">Parent Name</label>
+          <input required="" type="text" placeholder="Enter Your Name" class="form-control" name="nickname" value="">
+        </div>
+        <div class="input_field">
+          <label class="form-enq-name" for="birthday">Date of Birth</label>
+          <input type="date" name="birthday">
+        </div>
+        <div class="input_field">
+          <label class="form-enq-name">Email</label>
+          <input required="" type="email" placeholder="john@mexample.com" class="form-control" name="email" value="">
+        </div>
+        <div class="input_field">
+          <label class="form-enq-name">Phone Number</label>
+          <input required="" type="number" maxlength="10" placeholder="Enter mobile number" class="form-control" name="phone" value="">
+        </div>
+        <div class="enquiry-field">
+          <label class="form-enq-name" for="subject">Please write your query</label>
+          <textarea id="subject" name="subject" placeholder="Write your query here.." style="height:100px"></textarea>      
+        </div>
+        <div class="input_field_btn">
+          <input type="submit" class="btn submt_comment" value="Submit your query">
+       </div>
+      </form>
+    </div>
+
+
+
+
+
+
+     <div class="desktop-1">
+      <div class="container"> 
+        <div class="momomm">
+<div class="wh-sec">
+    <div class="orange-box">
+        <div class="scl-type child-1 arrow-icon-1 farmr-20">
+            <select name="cars" id="cars" form="carform">
+                <option value="volvo">School Type</option>
+                <option value="saab">Day School</option>
+                <option value="opel">Play School</option>
+                <option value="audi">Boarding School</option>
+                <option value="pu">PU Juniors School</option>
+            </select>
+        </div>
+        <div class="child-1  arrow-icon-1 farmr-20">
+            <select name="cars" id="cars" form="carform">
+                <option value="volvo">Select board  </option>
+                <option value="saab">CBSE Board</option>
+                <option value="opel">ICSE Board</option>
+            </select>
+        </div>
+          <div class="child-1">
+              <input type="number" class="area-pin" placeholder="Area pincode">
+                <!-- <option type="number" value="volvo">Area pincode</option>
+                <option type="number" value="saab">250001</option>
+                <option type="number" value="opel">129874</option>
+                <option type="number" value="audi">123481</option> -->
+          </div>
+          <div class="child-1 arrow-icon-1 farmr-20">
+            <select name="cars"  id="cars" form="carform">
+                  <option value="city">Select City</option>
+                  <option value="mrt">Meerut</option>
+                  <option value="delhi">Delhi</option>
+                  <option value="noida">Noida</option>
+                  <option value="Gurgaon">Gurgaon</option>
+            </select>
+          </div>
+        </div>
+        <div class="button">
+          <a href="search-home.html" class="btnsearch btn btn-primary blue-btns">Search</a>
+       </div>
+    
+</div>
+</div>
+      <div class="slide-text">
+
+      <h1>Find the Best School  <span>for your child. </span></h1> 
+      <div class="para">
+         <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy  text used in laying out print, graphic or web designs.</p>
+      </div>
+
+     </div>
+     
+    
+        </div>
+    </div>
+
+
+
+   <section id="categories">  
+        <p id="category-head">Browse by <span style="color: rgba(255, 167, 1, 1); text-decoration: underline;">Category</span></p>
+        <div class="container category-container">
+           
+           <div class="category-item">
+            <a href="day-school.html">
+              <img src="img/category1.jpg" alt="">
+              <p>Day School</p></a>
+           </div>
+           
+           <div class="category-item">
+            <a href="day-school.html">
+              <img src="img/category2.jpg" alt="">
+              <p>Play School</p>
+            </a> 
+           </div>
+           <div class="category-item">
+            <a href="day-school.html">
+              <img src="img/category3.jpg" alt="">
+              <p>Boarding School</p></a>
+           </div>
+           <div class="category-item">
+            <a href="day-school.html">
+              <img src="img/category3.jpg" alt="">
+              <p>PU Juniors College</p></a>
+           </div>
+        </div>
+   </section>
+
+<!-- <div class="container">
+<div class="wh-sec">
+    <div class="orange-box">
+        <div class="child-1 arrow-icon-1 farmr-20">
+            <select name="cars" id="cars" form="carform">
+                <option value="volvo">Which class required</option>
+                <option value="saab">1</option>
+                <option value="opel">2</option>
+                <option value="audi">3</option>
+            </select>
+        </div>
+        <div class="child-1  arrow-icon-1 farmr-20">
+            <select name="cars" id="cars" form="carform">
+                <option value="volvo">Select board  </option>
+                <option value="saab">1</option>
+                <option value="opel">2</option>
+                <option value="audi">3</option>
+            </select>
+        </div>
+        <div class="child-1 arrow-icon-1 farmr-20">
+            <select name="cars"  id="cars" form="carform">
+                <option value="volvo">Area pincode  </option>
+                <option value="saab">1</option>
+                <option value="opel">2</option>
+                <option value="audi">3</option>
+            </select>
+        </div>
+        <div class="button">
+            <button>Find Now</button>
+        </div>
+    </div>
+</div>
+</div>
+ -->
+
+
+<div class="gery-box">
+	<div class="container">
+    <div class="parent">
+		<div class="box">
+			<h2>Best rated schools</h2>
+           <p>Lorem ipsum, or lipsum as it is sometimes known, dummy 
+           text used in laying out print, graphic or web designs.</p>
+
+           <div class="view-all">
+            <a href="best-rated-sch-home.html"><button>View All</button></a>
+           </div>
+		</div>
+    
+
+    <div class="best-rated-school">
+      <ul class="best-rated-school-list">
+    
+          <li>  
+            <div class="box-1 farmr">
+              <a href="categories.html">
+              <img src="img/img-1.png">
+              <div class="white-box">
+                <h3>Aster Public School</h3>
+                <div class="set-start">
+                  <div class="star">
+                    <img src="img/star.png">
+                  </div>
+                  <div class="star">
+                    <img src="img/star.png">
+                  </div>
+                  <div class="star">
+                    <img src="img/star.png">
+                  </div>
+                  <div class="star">
+                    <img src="img/star.png">
+                  </div>
+                  <div class="star">
+                    <img src="img/star.png">
+                  </div>
+                  <div class="star">
+                    <img src="img/star.png">
+                  </div>
+               </div>
+             </div></a>
+           </div>
+         </li>
+     
+
+          <li>
+            <div class="box-1 farmr">
+              <a href="categories.html">
+              <img src="img/img-2.png">
+                <div class="white-box">
+                  <h3>Aster Public School</h3>
+                  <div class="set-start">
+                    <div class="star">
+                      <img src="img/star.png">
+                    </div>
+                    <div class="star">
+                      <img src="img/star.png">
+                    </div>
+                    <div class="star">
+                      <img src="img/star.png">
+                    </div>
+                    <div class="star">
+                      <img src="img/star.png">
+                    </div>
+                    <div class="star">
+                      <img src="img/star.png">
+                    </div>
+                  </div>
+                </div></a>
+            </div>
+          </li>
+  
+
+     
+          <li>
+            <div class="box-1 farmr">
+              <a href="categories.html">
+              <img src="img/img-3.png">
+                  <div class="white-box">
+                  <h3>Aster Public School</h3>
+                    <div class="set-start">
+                        <div class="star">
+                          <img src="img/star.png">
+                        </div>
+                        <div class="star">
+                          <img src="img/star.png">
+                        </div>
+                        <div class="star">
+                          <img src="img/star.png">
+                        </div>
+                        <div class="star">
+                          <img src="img/star.png">
+                        </div>
+                        <div class="star">
+                          <img src="img/star.png">
+                        </div>
+                  </div>
+          </div></a>
+            </div>
+         </li>
+         <li>
+          <div class="box-1 farmr">
+            <a href="categories.html">
+            <img src="img/img-3.png">
+                <div class="white-box">
+                <h3>Aster Public School</h3>
+                  <div class="set-start">
+                      <div class="star">
+                        <img src="img/star.png">
+                      </div>
+                      <div class="star">
+                        <img src="img/star.png">
+                      </div>
+                      <div class="star">
+                        <img src="img/star.png">
+                      </div>
+                      <div class="star">
+                        <img src="img/star.png">
+                      </div>
+                      <div class="star">
+                        <img src="img/star.png">
+                      </div>
+                </div>
+        </div></a>
+          </div>
+       </li>
+      </ul>
+    </div>
+ 
+  
+  </div>
+
+
+	</div>
+</div>
+
+
+<section class="discover-schools-states">
+  <div class="discover-schools-states-location">
+    <div id="img">
+        <img src="img/location.png" alt=""/>
+    </div>
+    <div>
+      <h1>Discover Schools in <span style="color: rgba(255, 167, 1, 1); text-decoration: underline;">States</span></h1>
+    </div>
+  </div>
+  <ul class="discover-schools-list">
+      <div class="discover-school-item">
+        <a href="search-home.html">
+        <li>
+          <h2>Haryana</h2>
+          <p>404</p>
+
+        </li>
+        </a>
+      </div>
+      <div class="discover-school-item">
+        <a href="search-home.html">
+        <li>
+          <h2>Tamil Nadu</h2>
+          <p>296</p>
+         </li>
+         </a>
+      </div>
+      <div class="discover-school-item">
+        <a href="search-home.html">
+        <li>
+          <h2>West Bengal</h2>
+          <p>275</p>
+         </li>
+         </a>
+      </div>
+      <div class="discover-school-item">
+        <a href="search-home.html">
+        <li>
+          <h2>Jharkhanad</h2>
+          <p>256</p>
+         </li>
+         </a>
+      </div>
+      <div class="discover-school-item">
+        <a href="search-home.html">
+        <li>
+          <h2>Punjab</h2>
+          <p>367</p>
+         </li>
+         </a>
+      </div>
+  </ul>
+</section>
+
+<div class="container">
+  <div class="rating-heading">
+   <h6>Best   <span>Services</span></h6>
+ </div>
+<div class="service">
+  
+<div class="ser-set">
+  <div class="ser-box farrm">
+    <img src="img/rating.png">
+    <h4>Best Rating Schools</h4>
+  </div>
+   <div class="ser-box farrm">
+    <img src="img/patner.png">
+    <h4>Ken World
+Verified Partner</h4>
+  </div>
+   <div class="ser-box ">
+    <img src="img/school.png">
+    <h4>Ken World
+Certified Schools</h4>
+  </div>
+</div>
+</div>
+</div>
+
+<section class="testimonial">
+  <div id="testimonial-content">
+    <h1>Testimon<span style="color:rgba(255, 167, 1, 1); text-decoration: underline;">ials</span></h1>
+    <ul class="testimonal-list">
+        <div>
+          <li>
+            <h2>Amit Sharma</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolor provident rem animi modi quae omnis itaque illo pariatur explicabo!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt dolor sunt maiores quam quos! Excepturi odio aspernatur harum molestias facere!</p>
+          </li>
+        </div>
+        <div>
+          <li>
+            <h2>Ariyan</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam ipsam quas magni, odit dignissimos harum tempore omnis autem magnam corporis?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias laboriosam at incidunt necessitatibus. Totam fugiat eius repellendus illum hic voluptate?</p>
+           </li>
+        </div>
+        <div>
+          <li>
+            <h2>Karan</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque deserunt a totam eveniet ratione necessitatibus, et nesciunt quasi assumenda voluptatibus!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptates iusto tempora tenetur obcaecati sunt itaque, facilis alias mollitia iste.</p>
+           </li>
+        </div>
+        <div>
+          <li>
+            <h2>Deepak</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla voluptatem cum aspernatur modi earum recusandae debitis reprehenderit hic illum doloribus?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis vero voluptas eveniet esse quasi beatae repellat dolorem ut quod modi.</p>
+           </li>
+        </div>
+    </ul>   
+  </div>
+</section>
+
+
+<div class="footer-bg">
+<div class="container">
+<div class=" footers">
+          <div class="m-5">
+              <img class="farbm" src="img/logo.png" alt="">
+              <div class="d-flex farbm-10"> <img src="img/phone.png" alt=""> <span class="mx-2">+91-9999 000 000</span> </div>
+              <img src="img/email.png" alt=""> <span class="mx-2">info@pa@gmail.com</span>
+          </div>
+          <div class="m-5">
+              <ul class="ul-li">
+              <li class="text-color-green mb-2">Information</li>
+                  <a href="index.html"><li>Home</li></a> 
+                  <li>Services</li>
+                  <li>Order Tracking</li>
+                  <li>News</li>
+                  <li>Contact Us</li>
+              </ul>
+          </div>
+          <div class="m-5">
+              <ul class="ul-li">
+                  <li class="text-color-green mb-2">Information</li>
+                  <li>Service</li>
+                  <li>Support</li>
+                  <li>Privacy</li>
+                  <li>Terms &amp; Conditions</li>
+              </ul>
+
+          </div>
+      
+          <div class="m-5   ">
+              <p class="text-color-green mb-2">Subscribe More Information</p>
+                <input type="text" id="lname" name="lname" placeholder="Type Your Mail Id">
+                <div class="suscribe">
+                  <button>SUBSCRIBE</button>
+                </div>
+              <div> 
+                  <p>Follow us on:</p> 
+                  <img src="img/fb.png">  
+                  <img src="img/insta.png"> 
+                <img src="img/yt.png"> 
+                <img src="img/tw.png">
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+      <div class="footer-heading  green-btns text-center text-white"><p>All right reserved @ codiantbiztech.com</p></div>
+
+
+
+
+
+
+
+
+
+
+ <div class="overlay"></div>
+    <section class="login_form" style="display: none;">
+        <div class="login_pop">
+            <span class="popup_close">X</span>
+            <div class="login_img"></div>
+            <div class="login_content">
+            <h2  class="titile">Login</h2>
+                <p>Don't have an account? <a class="signup" href="javascript:void(0)">Sign Up</a></p>
+          
+                
+        <form id="loginFormm">
+            <div class="input_field">
+            <input type="text" placeholder="Enter Email" name="email">
+            </div>
+            <div class="input_field">
+            <input type="password" placeholder="Enter Password" name="password">
+            </div>
+            <p class="forget-password"> <a class="forget" href="javascript:void(0)">Forgot Password ?</a></p>
+            <div class="input_field_btn">
+            <input type="submit" value="Login" name="loginSubmit"  id="loginBtnn">
+            </div>
+            <div id="loginBtnnError"></div>
+
+            <p class="or">or</p>
+            <div class="input_field_btn">
+              <input type="submit" value="Sign in with Google" name="Signinwithgoogle" id="signinBtnn">
+          </div>
+          
+            </form>
+                
+                </div>
+        </div>
+    
+    </section>
+       <section class="sign_up" style="display: none">
+            
+           
+        <div class="login_pop">
+            <span class="popup_close">X</span>
+             <div class="login_img"></div>
+            <div class="login_content">
+            <h2  class="titile">Sign Up</h2>
+                <p>Already have an account? <a class="login loginShow" href="javascript:void(0)">Login</a></p>
+            
+              <form id="signUpForm">
+                  <div class="input_field">
+                  <input type="text" placeholder="Enter Name" name="name">
+                  </div>
+                  <div class="input_field">
+                  <input type="text" placeholder="Enter Phone Number" name="mobile">
+                  </div>
+                  <div class="input_field">
+                  <input type="text" placeholder="Enter School Name" name="school">
+                  </div>
+                  <div class="input_field">
+                  <input type="password" placeholder="Enter Password" name="password" id="pass">
+                  </div>
+                  <div class="input_field">
+                  <input type="password" placeholder="Confirm Password" name="cpass">
+                  </div>
+                  <div class="input_field_btn">
+                  <input type="submit" value="Register" name="signUpBtnn" id="signUpBtnn">
+                  </div><div id="signupBtnnError"></div>
+              </form>
+        </div>
+
+ 
+    </div>
+
+    
+    
+    </section>
+     <section class="forget_password" style="display: none">
+        <div class="login_pop">
+            <span class="popup_close">X</span>
+            <div class="login_img"></div>
+            <div class="login_content">
+            <h2 class="titile">Forgot Password ?</h2>
+                <p><a class="login" href="javascript:void(0)">Return to Login </a></p>
+           
+            <form id="forgetForm">
+                <div class="input_field">
+                <input type="email" placeholder="Enter Email Address" name="email">
+                </div>
+                <div class="input_field_btn">
+                <input type="submit" value="Submit" id="forgetpass" name="forgetpass">
+                </div><div class="forgetpassErr"></div>
+            </form>
+                
+        </div>
+        </div>
+    
+    </section>   
+
+    
+    
+       
+    
+   
+   <section class="write_review" style="display: none;">
+    <div class="review">
+    <div class="section_titile">
+        <h2 class="titile">Write Comment</h2>
+            
+        </div>
+        <div class="review_form">
+        <form id="commentForm">
+            <div class="input_field">
+                <label>Name: </label>
+                
+            </div>
+             <div class="input_field">
+                <label>Email: </label>
+                
+            </div>
+
+            <div class="input_field">
+            <label>Review Title</label>
+            <input type="text" placeholder="Give your review title" name="title">
+            <input type="hidden" name="course_id" id="mycourse_id" value="0">
+            </div>
+            <div class="input_field">
+                <label>Body of Review (1500)</label>
+            <textarea placeholder="Write your comments here" name="review"></textarea>
+            </div>
+            <div class="input_field_btn">
+            <input type="submit" value="Submit Comment" name="commentFormBtn" id="commentFormBtn">
+            </div>
+            </form><div id="commentFormError"></div>
+        </div>
+    </div>
+    </section>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+
+jQuery(document).ready(function(){
+ jQuery(".login-show").click(function(){
+    jQuery(".login_form").show();
+    jQuery(".overlay").show();
+
+   
+
+  });
+ jQuery(".loginShow").click(function(){
+    jQuery(".login_form").show();
+    jQuery(".overlay").show();
+    jQuery(".sign_up").hide();
+   
+
+  });
+  jQuery(".popup_close").click(function(){
+
+    jQuery(".login_form").hide();
+    jQuery(".overlay").hide();
+    jQuery(".sign_up").hide();
+
+    });
+    jQuery(".overlay").click(function(){
+      jQuery(".login_form").hide();
+    jQuery(".overlay").hide();
+    jQuery(".sign_up").hide();
+   
+
+  });
+
+     jQuery(".register").click(function(){
+    jQuery(".sign_up").show();
+    jQuery(".overlay").show();
+   
+
+  });
+       jQuery(".signup").click(function(){
+    jQuery(".sign_up").show();
+    jQuery(".overlay").show();
+   
+
+  });
+
+      jQuery(".forget").click(function(){
+    jQuery(".forget_password").show();
+    jQuery(".overlay").show();
+     jQuery(".login_form").hide();
+   
+
+  }); 
+         jQuery(".login").click(function(){
+    jQuery(".forget_password").hide();
+    jQuery(".overlay").show();
+     jQuery(".login_form").show();
+   
+
+  }); 
+    
+      jQuery(".help-enquiry").click(function(){
+           $(".enquiry").show();
+           $(".overlay").show();
+      });
+      jQuery(".close-btn-enquiry").click(function(){
+           $(".enquiry").hide();
+           $(".overlay").hide();
+      });
+      jQuery(".overlay").click(function(){
+          $(".enquiry").hide();
+          $(this).hide();
+
+  });
+
+}); 
+  </script>
+
+
+  <script type="text/javascript">
+     // alert("ejdfheufh")
+     $(window).scroll(function() {    
+
+    var scroll = $(window).scrollTop();
+    var height = $(".header-navbar").outerHeight();
+     //>=, not <=
+    if (scroll >=height ) {
+        //clearHeader, not clearheader - caps H
+        $("body").addClass("sticky");
+        $(".header-navbar").addClass("sticky_header");
+        $("body").css("padding-top", height);
+        console.log(height)
+    }else{
+      $("body").removeClass("sticky");
+        $(".header-navbar").removeClass("sticky_header");
+        $("body").css("padding-top", 0);  
+    }
+});
+
+  </script>
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+       <script>
+         $('.best-rated-school-list').slick({
+          //  centerPadding: '60px',
+           slidesToShow: 3,
+           slidesToScroll:1,
+           arrows:true,
+          //  autoplay: 200
+           });
+         $('.discover-schools-list').slick({
+           centerMode: false,
+           slidesToShow:4,
+           slidesToScroll:1,
+          //  autoplay: 200
+         });
+         $('.testimonal-list').slick({
+          //  centerMode: true,
+           slidesToShow:1,
+           slidesToScroll:1,
+          //  autoplay: 200
+         })
+     </script>
+
+<script>
+  const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger= document.querySelector(".hamburger");
+  const closeIcon= document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
+
+  function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+  } else {
+      menu.classList.add("showMenu");
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+  }
+  }
+
+  hamburger.addEventListener("click", toggleMenu);
+
+  menuItems.forEach(function(menuItem) { 
+      menuItem.addEventListener("click", toggleMenu);
+  }
+)
+</script>
+</body>
+</html>
