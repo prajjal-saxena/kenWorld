@@ -2047,7 +2047,7 @@ form.form-scl.form-faq {
 /* DASHBOARD UPDATE PROFILE */
 .update-profile{
     /* border: 1px solid #000; */
-    width: 65%;
+    width: 78%;
 }
 .update-profile h2{
     font-size: 26px;
@@ -2133,6 +2133,19 @@ form.form-scl.form-faq {
     }
 
     /* HOME SECTION */
+    .orange-box select#cars {
+        width: 159px;
+    }
+
+     /* Best school rated */
+    .best-rated-school {
+        width: 72%;
+    }
+    /* Testimonial section */
+    ul.testimonal-list.slick-initialized.slick-slider {
+        max-width: 684px;
+    }
+    
 }
 
 
